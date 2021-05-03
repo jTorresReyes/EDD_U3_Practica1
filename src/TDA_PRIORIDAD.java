@@ -9,8 +9,8 @@
  * @author corre
  */
 public class TDA_PRIORIDAD {
-    char dato;
-    int lvl;
+    private char dato;
+    private int lvl;
 
     public TDA_PRIORIDAD() {
     }
