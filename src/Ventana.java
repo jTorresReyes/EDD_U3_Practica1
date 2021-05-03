@@ -133,12 +133,15 @@ public class Ventana extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         TDA_PRIORIDAD data = new TDA_PRIORIDAD();        
+        
         data.setDato(jTextField1.getText().charAt(0));
         data.setLvl(Integer.parseInt(jTextField2.getText()));
+        
         boolean answer = obj.insertarCorrimiento(data);
         String msg = "Error! No se ha insertado, cola llena!";
         if(answer==true) msg = "Se ha capturado el valor con exito!";
         jLabel3.setText(msg);
+        
         jTextField1.setText("");
         jTextField2.setText("");
         mostrarCola();       
